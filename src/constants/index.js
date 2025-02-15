@@ -238,18 +238,6 @@ export const expertiseApps = [
 export const education = [
   {
     id: "0",
-    title: "Zahira National College Kalmunai",
-    text:
-      "I successfully completed both my G.C.E. Ordinary Level and G.C.E. Advanced Level examinations at a prestigious and renowned institution, recognized for its excellence. ",
-    backgroundUrl: "./src/assets/education/card-1.svg",
-    iconUrl: zcklogo,
-    imageUrl: schoolimage,
-    text0: "G.C.E Ordinary Level",
-    text1: "G.C.E Advanced Level - Physical Science Stream",
-    logo1: zcklogo,
-  },
-  {
-    id: "1",
     title: "University Of Moratuwa",
     text:
       "I am currently pursuing a Bachelor's degree in Information Technology and Management at the University of Moratuwa, where I am gaining deep expertise in Software Engineering.",
@@ -259,6 +247,18 @@ export const education = [
     iconUrl: uomlogo,
     imageUrl: universityimage,
     light: true,
+  },
+  {
+    id: "1",
+    title: "Zahira National College Kalmunai",
+    text:
+      "I successfully completed both my G.C.E. Ordinary Level and G.C.E. Advanced Level examinations at a prestigious and renowned institution, recognized for its excellence. ",
+    backgroundUrl: "./src/assets/education/card-1.svg",
+    iconUrl: zcklogo,
+    imageUrl: schoolimage,
+    text0: "G.C.E Ordinary Level",
+    text1: "G.C.E Advanced Level - Physical Science Stream",
+    logo1: zcklogo,
   },
 ];
 
