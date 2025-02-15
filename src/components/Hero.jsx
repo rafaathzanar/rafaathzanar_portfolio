@@ -27,14 +27,14 @@ const Hero = () => {
             <span
   className="inline-block relative"
   style={{
-    background: "linear-gradient(90deg, #FFD700, #800080)",
+    background: "linear-gradient(90deg,rgb(255, 246, 141),rgb(244, 209, 255))",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   }}
 >
               {/* Add the typing animation for your name */}
               <TypingEffect
-                text={["Rafath Zanar"]} // Text for typing effect
+                text={["Rafaath Zanar"]} // Text for typing effect
                 speed={100}
                 eraseDelay={2000}
                 typingDelay={100}

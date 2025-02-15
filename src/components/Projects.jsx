@@ -7,7 +7,7 @@ import { Gradient } from "./design/Roadmap";
 import Arrow from "../assets/svg/Arrow";
 
 const Projects = () => (
-  <Section className="overflow-hidden" id="projects">
+  <Section id="projects"  >
     <div className="container md:pb-0">
     <div className="mt-10"></div>
       <Heading tag="Projects and Technologies" title="My Projects" />

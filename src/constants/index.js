@@ -1,22 +1,17 @@
 import {
   uomlogo,
   zcklogo,
-  chromecast,
-  disc02,
   discordBlack,
   linkedin,
   github,
   file02,
   homeSmile,
   plusSquare,
-  recording01,
-  recording03,
   transitgopic,
   project2,
   project3,
   project4,
   searchMd,
-  sliders04,
   yourlogo,
   react,
   java,
@@ -35,13 +30,13 @@ import universityimage from "../assets/education/university.jpg";
 export const navigation = [
   {
     id: "0",
-    title: "Projects",
-    url: "#projects",
+    title: "Profile",
+    url: "#about",
   },
   {
     id: "1",
-    title: "Expertise",
-    url: "#expertise",
+    title: "Projects",
+    url: "#projects",
   },
   {
     id: "2",
@@ -50,9 +45,10 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "About",
-    url: "#about",
+    title: "Expertise",
+    url: "#expertise",
   },
+
   {
     id: "4",
     title: "Contact",
@@ -63,20 +59,6 @@ export const navigation = [
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
-
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
 
 export const projects = [
   {
@@ -108,7 +90,24 @@ export const projects = [
     technologies: [
       { name: "React", logo: react },
       { name: "Spring", logo: spring },
-      { name: "MongoDb", logo: mongodb },
+      { name: "MySQL", logo: mysql },
+      { name: "MaterialUI", logo: materialui },
+    ],
+  },
+  {
+    id: "4",
+    title: "Metro Mobiles - Online Electronic Store",
+    text:
+      "Built an online electronics store that provides a seamless platform to browse, purchase, and manageelectronic products. The project was built using a microservices architecture, including user service, productservice, and ordering service.",
+    date: "Dec 2024",
+    status: "done",
+    imageUrl: transitgopic,
+    colorful: true,
+    link: "https://github.com/orgs/Metro-Mobiles/repositories",
+    technologies: [
+      { name: "React", logo: react },
+      { name: "Spring", logo: spring },
+      { name: "MySQL", logo: mysql },
       { name: "MaterialUI", logo: materialui },
     ],
   },
@@ -123,8 +122,6 @@ export const projects = [
     link: "https://rafaathzanar-portfolio.vercel.app",
     technologies: [
       { name: "React", logo: react },
-      { name: "Spring", logo: spring },
-      { name: "MongoDb", logo: mongodb },
       { name: "Tailwindcss", logo: tailwind },
     ],
   },
@@ -170,7 +167,7 @@ export const expertiseContents = [
     title: "JavaScript",
   },
   {
-    id: "5",
+    id: "7",
     title: "TypeScript",
   },
   {
@@ -189,7 +186,7 @@ export const expertiseApps = [
   },
   {
     id: "1",
-    title: "Spring",
+    title: "Spring Boot",
     icon: spring,
     width: 34,
     height: 36,
