@@ -93,14 +93,17 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <Button className="hidden lg:flex" href="#contact">
-          Contact Me
-        </Button>
-        
-        <Button className="hidden lg:flex ml-10" onClick={() => window.open("https://drive.google.com/file/d/1klYsB6k9n_AWJUfyUlHrAM6nkhsy_hde/preview", "_blank")}
-        >
-          My Resume
-        </Button>
+        <Button className="flex lg:flex" href="#contact">
+  Contact Me
+</Button>
+
+<Button 
+  className="flex lg:flex ml-10" 
+  onClick={() => window.open("https://drive.google.com/file/d/1klYsB6k9n_AWJUfyUlHrAM6nkhsy_hde/preview", "_blank")}
+>
+  My Resume
+</Button>
+
 
         <Button
           className="ml-auto lg:hidden"
