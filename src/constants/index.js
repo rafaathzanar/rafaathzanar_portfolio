@@ -35,22 +35,27 @@ export const navigation = [
   },
   {
     id: "1",
+    title: "Experience",
+    url: "#experience",
+  },
+  {
+    id: "2",
     title: "Projects",
     url: "#projects",
   },
   {
-    id: "2",
+    id: "3",
     title: "Education",
     url: "#education",
   },
   {
-    id: "3",
+    id: "4",
     title: "Expertise",
     url: "#expertise",
   },
 
   {
-    id: "4",
+    id: "5",
     title: "Contact",
     url: "#contact",
   },
@@ -59,6 +64,31 @@ export const navigation = [
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+
+export const experiences = [
+  {
+    id: "0",
+    company: "PickMe - Digital Mobility Solutions",
+    role: "Intern Software Engineer",
+    location: "Colombo, Sri Lanka",
+    period: "March 2025 – September 2025",
+    highlights: [
+      "Developed microservices in Golang with multi-tenancy support across services, ensuring tenant-specific configurations and scalable architecture.",
+      "Implemented and executed unit testing across backend services.",
+      "Configured monitoring and observability with Grafana, Prometheus, New Relic, and Kibana to improve debugging and reliability.",
+      "Deployed services across development, staging, and production using GitLab CI/CD and Argo CD.",
+      "Worked with MySQL by writing and optimizing queries within backend services.",
+      "Integrated Apache Kafka for event-driven communication with tenant-specific producers, consumers, and event flows.",
+    ],
+    technologies: [
+      { name: "GoLang", logo: golang },
+      { name: "Kafka", logo: kafka },
+      { name: "MySQL", logo: mysql },
+      { name: "Spring", logo: spring },
+      { name: "React", logo: react },
+    ],
+  },
+];
 
 export const projects = [
   {
