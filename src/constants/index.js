@@ -287,6 +287,7 @@ export const education = [
     iconUrl: uomlogo,
     imageUrl: universityimage,
     light: true,
+    gpa: "3.70",
   },
   {
     id: "1",

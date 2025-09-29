@@ -1,59 +1,53 @@
 import { education } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
-import { GradientLight } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
+import { grid } from "../assets";
 
 const Education = () => {
   return (
     <Section id="education">
       <div className="mt-10"></div>
-      <div className="container relative z-2">
-        <Heading className="md:max-w-md lg:max-w-2xl" title="Education" />
-        <div className="flex flex-wrap gap-10 mt-10 mb-10">
+      <div className="container md:pb-0">
+        <Heading title="Education" />
+        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[0rem] mt-10 mb-10">
           {education.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[48%] border-2 border-transparent before:content-[''] before:absolute before:inset-0 before:rounded-xl before:border-[0.6px] before:border-transparent before:bg-gradient-to-r before:from-pink-500 before:via-purple-500 before:to-blue-500 before:bg-[length:600%_600%] before:animate-gradient-border"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
-              }}
+              className="md:flex p-0.25 rounded-[2.5rem] bg-n-6 w-full"
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-
-                <div className="details">
-                  <img
-                    src={item.logo1}
-                    width={40}
-                    height={50}
-                    alt={item.title}
-                  />
-                  {item.text1}
+              <div className="relative p-6 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-10 w-full">
+                <div className="absolute top-0 left-0 max-w-full">
+                  <img className="w-full" src={grid} width={550} height={550} alt="Grid" />
                 </div>
-              </div>
-
-              {item.light && <GradientLight />}
-
-              <div
-                className="absolute inset-0.5 bg-n-8"
-                style={{ clipPath: "url(#benefits)" }}
-              >
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
-                  {item.imageUrl && (
+                {item.logo1 && (
+                  <div className="absolute top-6 right-6 z-2">
+                    <img src={item.logo1} alt={item.title} className="w-12 h-12 md:w-14 md:h-14 object-contain" />
+                  </div>
+                )}
+                <div className="relative z-1">
+                  <h4 className="h6 mb-2">{item.title}</h4>
+                  <p className="text-sm text-n-4 mb-4">{item.text}</p>
+                  {item.text1 && (
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-xs text-n-3 flex-1">{item.text1}</p>
+                      {item.gpa && (
+                        <div className="flex items-center px-3 py-1 bg-n-1 rounded text-n-8 whitespace-nowrap">
+                          <div className="tagline">GPA: {item.gpa}</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+                {item.imageUrl && (
+                  <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                     <img
                       src={item.imageUrl}
-                      width={380}
-                      height={362}
                       alt={item.title}
                       className="w-full h-full object-cover"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
-
-              <ClipPath />
             </div>
           ))}
         </div>
