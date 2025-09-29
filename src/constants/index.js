@@ -284,6 +284,7 @@ export const education = [
     imageUrl: universityimage,
     light: true,
     gpa: "3.70",
+    period: "March 2022 – Present",
   },
   {
     id: "1",
@@ -296,6 +297,7 @@ export const education = [
     text0: "G.C.E Ordinary Level",
     text1: "G.C.E Advanced Level - Physical Science Stream",
     logo1: zcklogo,
+    period: "August 2020",
   },
 ];
 

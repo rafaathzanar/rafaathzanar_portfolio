@@ -25,6 +25,11 @@ const Education = () => {
                   </div>
                 )}
                 <div className="relative z-1">
+                  {item.period && (
+                    <div className="mb-3">
+                      <span className="tagline px-3 py-1 rounded bg-n-7/80 border border-n-6">{item.period}</span>
+                    </div>
+                  )}
                   <h4 className="h6 mb-2">{item.title}</h4>
                   <p className="text-sm text-n-4 mb-4">{item.text}</p>
                   {item.text1 && (
