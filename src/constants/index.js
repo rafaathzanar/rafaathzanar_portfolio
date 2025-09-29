@@ -207,10 +207,6 @@ export const expertiseContents = [
     id: "7",
     title: "Kafka",
   },
-  {
-    id: "8",
-    title: "MongoDB",
-  },
 ];
 
 export const expertiseApps = [
