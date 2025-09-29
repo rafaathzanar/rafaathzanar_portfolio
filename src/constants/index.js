@@ -16,9 +16,9 @@ import {
   react,
   java,
   javascript,
-  mongodb,
+  kafka,
   spring,
-  typescript,
+  golang,
   mysql,
   tailwind,
   cpp,
@@ -63,17 +63,17 @@ export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 export const projects = [
   {
     id: "1",
-    title: "Play Era",
+    title: "Playera",
     text:
-      " Play Era is a cutting-edge web app designed to revolutionize how sports enthusiasts book venues in Sri Lanka. Whether it's futsal courts, badminton courts, cricket grounds, or swimming pools, Play Era offers a seamless and user-friendly experience.",
-    date: "Sept 2024",
-    status: "progress",
+      " Playera is a cutting-edge web app designed to revolutionize how sports enthusiasts book venues in Sri Lanka. Whether it's futsal courts, badminton courts, cricket grounds, or swimming pools, Playera offers a seamless and user-friendly experience.",
+    date: "Sept 2025",
+    status: "done",
     imageUrl: project2,
     link: "https://github.com/orgs/Playera-UOM/repositories",
     technologies: [
       { name: "React", logo: react },
       { name: "Spring", logo: spring },
-      { name: "MongoDb", logo: mongodb },
+      { name: "MySQL", logo: mysql },
       { name: "Tailwindcss", logo: tailwind },
     ],
   },
@@ -144,46 +144,46 @@ export const projects = [
 export const expertiseContents = [
   {
     id: "0",
-    title: "ReactJS",
-  },
-  {
-    id: "1",
     title: "SpringBoot",
   },
+
+  {
+    id: "1",
+    title: "GoLang",
+  },
+
   {
     id: "2",
+    title: "ReactJS",
+  },
+
+  {
+    id: "3",
     title: "Java",
   },
   {
-    id: "3",
+    id: "4",
     title: "React Native",
   },
   {
-    id: "4",
+    id: "5",
     title: "MySQL",
   },
   {
-    id: "5",
+    id: "6",
     title: "JavaScript",
   },
   {
     id: "7",
-    title: "TypeScript",
+    title: "Kafka",
   },
   {
-    id: "6",
+    id: "8",
     title: "MongoDB",
   },
 ];
 
 export const expertiseApps = [
-  {
-    id: "0",
-    title: "ReactJs",
-    icon: react,
-    width: 26,
-    height: 36,
-  },
   {
     id: "1",
     title: "Spring Boot",
@@ -192,26 +192,29 @@ export const expertiseApps = [
     height: 36,
   },
   {
-    id: "2",
-    title: "MySQL",
-    icon: mysql,
-    width: 36,
-    height: 28,
-  },
-  {
     id: "3",
     title: "Java",
     icon: java,
     width: 34,
     height: 35,
   },
+
   {
-    id: "4",
-    title: "TypeScript",
-    icon: typescript,
-    width: 34,
-    height: 34,
+    id: "2",
+    title: "MySQL",
+    icon: mysql,
+    width: 36,
+    height: 28,
   },
+
+  {
+    id: "0",
+    title: "ReactJs",
+    icon: react,
+    width: 26,
+    height: 36,
+  },
+
   {
     id: "7",
     title: "ReactNative",
@@ -228,10 +231,17 @@ export const expertiseApps = [
   },
   {
     id: "6",
-    title: "MongoDB",
-    icon: mongodb,
-    width: 26,
-    height: 34,
+    title: "Kafka",
+    icon: kafka,
+    width: 40,
+    height: 40,
+  },
+  {
+    id: "4",
+    title: "GoLang",
+    icon: golang,
+    width: 60,
+    height: 60,
   },
 ];
 

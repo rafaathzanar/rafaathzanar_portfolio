@@ -54,6 +54,8 @@ import mongodb from "./tech/mongodb.svg";
 import java from "./tech/java.svg";
 import javascript from "./tech/javascript.svg";
 import typescript from "./tech/typescript.svg";
+import golang from "./tech/golang.svg";
+import kafka from "./tech/kafka.svg";
 import mysql from "./tech/mysql.svg";
 import arduino from "./tech/arduino.svg";
 import cpp from "./tech/cpp.svg";
@@ -109,6 +111,8 @@ export {
   spring,
   mongodb,
   typescript,
+  golang,
+  kafka,
   java,
   javascript,
   mysql,
