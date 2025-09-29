@@ -1,13 +1,12 @@
-
 import { useRef, useState } from "react";
 import Section from "./Section";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Mailer = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
     from_name: "",
-   from_email: "",
+    from_email: "",
     message: "",
   });
 
@@ -25,34 +24,47 @@ const Mailer = () => {
     setError(false);
     setSuccess(false);
 
-    emailjs.sendForm(
-      'service_cqot4dp',  // Replace with your actual EmailJS service ID
-      'template_fb1kdh1', // Replace with your EmailJS template ID
-      form.current, 
-      'metHR7c9aDXAc04up'   // Replace with your EmailJS public key
-    )
-    .then(
-      (result) => {
-        console.log('SUCCESS!', result.text);
-        setSuccess(true);
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-        setError(true);
-      }
-    )
-    .finally(() => {
-      setLoading(false);
-    });
+    emailjs
+      .sendForm(
+        "service_677abv5", // Replace with your actual EmailJS service ID
+        "template_fb1kdh1", // Replace with your EmailJS template ID
+        form.current,
+        "metHR7c9aDXAc04up" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          setSuccess(true);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setError(true);
+        }
+      )
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
     <Section id="contact">
-      <form ref={form} onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-gray-800 rounded-md shadow-md mb-8">
+      <form
+        ref={form}
+        onSubmit={handleSubmit}
+        className="max-w-md mx-auto p-6 bg-gray-800 rounded-md shadow-md mb-8"
+      >
         <h2 className="text-xl text-center text-white mb-3">Contact Me</h2>
 
-        {success && <p className="text-green-500 text-center">Message sent successfully!</p>}
-        {error && <p className="text-red-500 text-center">Failed to send the message. Please try again.</p>}
+        {success && (
+          <p className="text-green-500 text-center">
+            Message sent successfully!
+          </p>
+        )}
+        {error && (
+          <p className="text-red-500 text-center">
+            Failed to send the message. Please try again.
+          </p>
+        )}
 
         <div className="mb-3">
           <label className="block text-white text-sm mb-1" htmlFor="name">
@@ -75,7 +87,7 @@ const Mailer = () => {
           </label>
           <input
             type="email"
-             name="from_email"
+            name="from_email"
             id="email"
             value={formData.email}
             onChange={handleChange}
