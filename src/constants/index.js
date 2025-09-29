@@ -278,7 +278,7 @@ export const education = [
     text:
       "I am currently pursuing a Bachelor's degree in Information Technology and Management at the University of Moratuwa, where I am gaining deep expertise in Software Engineering.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
-    text1: "BSc. (Hons) in Information Techonology and Management",
+    text1: "BSc. (Hons) in Information Technology and Management",
     logo1: uomlogo,
     iconUrl: uomlogo,
     imageUrl: universityimage,
