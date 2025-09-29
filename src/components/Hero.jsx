@@ -5,7 +5,7 @@ import pic from "../assets/hero/pic.png";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Notification from "./Notification";
-import TypingEffect from "react-typing-effect"; // Import TypingEffect for typing animation
+// Removed TypingEffect; using custom tech animation
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -23,23 +23,10 @@ const Hero = () => {
           <h1 className="h1 mb-6">
             <span className="h4 mb-6">Hi, I am </span>
             <br></br>
-            <span
-              className="inline-block relative"
-              style={{
-                background:
-                  "linear-gradient(90deg,rgb(255, 246, 141),rgb(244, 209, 255))",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              {/* Add the typing animation for your name */}
-              <TypingEffect
-                text={["Rafaath Zanar"]} // Text for typing effect
-                speed={100}
-                eraseDelay={2000}
-                typingDelay={100}
-              />
-              {` `}
+            <span className="inline-block relative">
+              <span className="tech-name tech-glitch" data-text="Rafaath Zanar">Rafaath Zanar</span>
+              <span className="tech-scan" aria-hidden="true"></span>
+              <span className="tech-underline" aria-hidden="true"></span>
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
