@@ -80,7 +80,7 @@ const Hero = () => {
 
             <BackgroundCircles />
           </div>
-          <p className="body-1 max-w-3xl mx-auto mb-4 text-n-2 lg:mb-6">
+          <p className="relative z-10 body-1 max-w-3xl mx-auto mb-4 text-n-2 lg:mb-6">
             Having worked with
             <span className="px-2 py-0.5 mx-1 rounded text-white bg-gradient-to-r from-green-700 via-emerald-800 to-teal-900 bg-200% animate-gradient-x">
               Golang
@@ -106,12 +106,12 @@ const Hero = () => {
               React Native
             </span>{" "}
           </p>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          <p className="relative z-10 body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             I have experience in working with microservices, production-grade
             systems, CI/CD pipelines, and observability tools, which
             strengthened my ability to deliver practical, high-impact solutions.
           </p>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          <p className="relative z-10 body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             I enjoy building scalable, reliable, and user-focused applications
           </p>
         </div>

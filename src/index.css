@@ -54,7 +54,7 @@ html:not(.dark) {
   .bg-n-7 { background-color: #e8e8f2 !important; }
   .bg-n-8 { background-color: #ffffff !important; }
   .bg-n-9 { background-color: #f0f0f8 !important; }
-  .bg-n-10 { background-color: #f5f5fc !important; }
+  .bg-n-10 { background-color: transparent !important; }
   .bg-n-11 { background-color: #f8f8ff !important; }
   .bg-n-12 { background-color: #f2f2fa !important; }
   
@@ -63,9 +63,9 @@ html:not(.dark) {
   .bg-n-8\/90 { background-color: rgba(255, 255, 255, 0.95) !important; }
   .bg-n-10\/50 { background-color: rgba(245, 245, 252, 0.8) !important; }
   
-  /* Opacity background variants */
-  [class*="bg-n-"][class*="bg-opacity"] { 
-    background-color: rgba(255, 255, 255, 0.7) !important; 
+  /* Opacity background variants - make transparent for hero section */
+  [class*="bg-n-10"][class*="bg-opacity"] { 
+    background-color: transparent !important; 
   }
   
   /* Border colors */
@@ -84,6 +84,21 @@ html:not(.dark) {
   img[alt="Grid"] {
     filter: invert(1) !important;
     opacity: 0.15 !important;
+  }
+  
+  /* Invert social icons for visibility in light mode */
+  img[alt="Linkedin"],
+  img[alt="Github"],
+  img[alt="Discord"] {
+    filter: invert(0.8) !important;
+  }
+  
+  /* Make background circle rings visible in light mode */
+  .border-n-2\/5 {
+    border-color: rgba(11, 2, 2, 0.615) !important;
+  }
+  .border-n-2\/10 {
+    border-color: rgba(1, 1, 8, 0.355) !important;
   }
 }
 
@@ -169,6 +184,23 @@ html:not(.dark) {
   animation: techGradient 6s ease infinite;
   position: relative;
   text-shadow: 0 0 10px rgba(159, 83, 255, 0.15);
+}
+
+/* Light mode: darker gradient colors for visibility */
+html:not(.dark) .tech-name {
+  background: linear-gradient(
+    90deg,
+    #b8860b,
+    #8b008b,
+    #008080,
+    #4b0082,
+    #c71585
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(75, 0, 130, 0.2);
 }
 
 .tech-scan {
