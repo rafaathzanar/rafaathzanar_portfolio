@@ -99,7 +99,7 @@ const Header = () => {
 
 <Button 
   className="flex lg:flex ml-10" 
-  onClick={() => window.open("https://drive.google.com/file/d/1klYsB6k9n_AWJUfyUlHrAM6nkhsy_hde/preview", "_blank")}
+  onClick={() => window.open("/resume.pdf", "_blank")}
 >
   My Resume
 </Button>
