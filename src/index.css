@@ -10,6 +10,15 @@
   --font-sora: "Sora", sans-serif;
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+/* Light mode (default) */
+html {
+  color-scheme: light;
+}
+
+/* Dark mode */
+html.dark {
   color-scheme: dark;
 }
 
@@ -19,8 +28,44 @@
 
 @layer base {
   body {
-    @apply font-sans bg-n-8 text-n-1 text-base;
+    @apply font-sans text-base transition-colors duration-300;
+    @apply bg-gray-50 text-gray-900;
+    @apply dark:bg-n-8 dark:text-n-1;
   }
+}
+
+/* Light mode color overrides - invert the n-* palette for visibility */
+/* These classes are used throughout components and need to be visible in light mode */
+html:not(.dark) {
+  /* Text colors: dark text on light background */
+  .text-n-1 { color: #1a1a2e !important; }
+  .text-n-2 { color: #2d2d44 !important; }
+  .text-n-3 { color: #3d3d5c !important; }
+  .text-n-4 { color: #5c5c7a !important; }
+  .text-n-8 { color: #1a1a2e !important; }
+  
+  /* Text with opacity */
+  .text-n-1\/50 { color: rgba(26, 26, 46, 0.6) !important; }
+  .text-n-1\/75 { color: rgba(26, 26, 46, 0.75) !important; }
+  
+  /* Background colors: light backgrounds */
+  .bg-n-1 { background-color: #e5e5eb !important; }
+  .bg-n-6 { background-color: #dcdce6 !important; }
+  .bg-n-7 { background-color: #e8e8f0 !important; }
+  .bg-n-8 { background-color: #f5f5fa !important; }
+  .bg-n-10 { background-color: #e0e0ea !important; }
+  .bg-n-11 { background-color: #f0f0f8 !important; }
+  .bg-n-12 { background-color: #e4e4ee !important; }
+  
+  /* Background with opacity - important for date badges */
+  .bg-n-7\/80 { background-color: rgba(220, 220, 235, 0.9) !important; }
+  .bg-n-8\/90 { background-color: rgba(245, 245, 250, 0.9) !important; }
+  
+  /* Border colors */
+  .border-n-6 { border-color: #c5c5d5 !important; }
+  
+  /* Stroke colors for decorative elements */
+  .bg-stroke-1 { background-color: #d1d1db !important; }
 }
 
 .rotate-45 {

@@ -51,9 +51,9 @@ const Mailer = () => {
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="max-w-md mx-auto p-6 bg-gray-800 rounded-md shadow-md mb-8"
+        className="max-w-md mx-auto p-6 bg-gray-100 dark:bg-gray-800 rounded-md shadow-md mb-8 transition-colors duration-300"
       >
-        <h2 className="text-xl text-center text-white mb-3">Contact Me</h2>
+        <h2 className="text-xl text-center text-gray-900 dark:text-white mb-3">Contact Me</h2>
 
         {success && (
           <p className="text-green-500 text-center">
@@ -67,7 +67,7 @@ const Mailer = () => {
         )}
 
         <div className="mb-3">
-          <label className="block text-white text-sm mb-1" htmlFor="name">
+          <label className="block text-gray-800 dark:text-white text-sm mb-1" htmlFor="name">
             Name
           </label>
           <input
@@ -77,12 +77,12 @@ const Mailer = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 bg-gray-700 text-white rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-500"
+            className="w-full px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-500 transition-colors duration-300"
           />
         </div>
 
         <div className="mb-3">
-          <label className="block text-white text-sm mb-1" htmlFor="email">
+          <label className="block text-gray-800 dark:text-white text-sm mb-1" htmlFor="email">
             Email
           </label>
           <input
@@ -92,12 +92,12 @@ const Mailer = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 bg-gray-700 text-white rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-500"
+            className="w-full px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-500 transition-colors duration-300"
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-white text-sm mb-1" htmlFor="message">
+          <label className="block text-gray-800 dark:text-white text-sm mb-1" htmlFor="message">
             Message
           </label>
           <textarea
@@ -107,7 +107,7 @@ const Mailer = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 bg-gray-700 text-white rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-500"
+            className="w-full px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-md text-sm focus:outline-none focus:ring focus:ring-indigo-500 transition-colors duration-300"
           ></textarea>
         </div>
 
